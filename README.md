@@ -1,2 +1,1 @@
-# jenkins-pipeline-loader
-Jenkins Pipeline Loader
+# Jenkins Pipeline Loader
