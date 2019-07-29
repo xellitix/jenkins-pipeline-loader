@@ -3,23 +3,34 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.jenkins-ci.plugins</groupId>
-        <artifactId>plugin</artifactId>
-        <version>3.46</version>
-        <relativePath />
+        <groupId>com.xellitix.commons</groupId>
+        <artifactId>parent-pom</artifactId>
+        <version>0.3.0</version>
     </parent>
 
     <groupId>com.xellitix.jenkins</groupId>
     <artifactId>pipeline-loader</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>Pipeline Loader</name>
 
     <properties>
-        <java.level>8</java.level>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/xellitix/jenkins-pipeline-loader.git</connection>
+        <developerConnection>scm:git:ssh://github.com:xellitix/jenkins-pipeline-loader.git</developerConnection>
+        <url>https://github.com/xellitix/jenkins-pipeline-loader</url>
+    </scm>
 
     <repositories>
         <repository>
@@ -46,6 +57,12 @@
     </pluginRepositories>
 
     <dependencies>
+        <dependency>
+            <groupId>org.jenkins-ci.main</groupId>
+            <artifactId>jenkins-core</artifactId>
+            <version>2.138.4</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305 -->
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
